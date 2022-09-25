@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block title %}login{% endblock %}
+{% block body %}
+<section class="bg-light min-vh-100 position-relative">
+    <div class="box bg-success position-absolute top-50 start-50 translate-middle shadow-lg">
+        <!--Box-->
+        <div class="d-flex flex-row">
+            <div class="bg-dark d-flex align-item-center justify-content-center">
+                <img src="../static/img/Finance analytics _Two Color.png" alt="" class="img-fluid d-lg-flex d-none top-50 ">
+            </div>
+            
+            <div class="bg-light p-5" style="width: 400px;">
+                <div class="text-center h3">Login</div>
+                <div class="h6 text-start">Username</div>
+                <input class="form-control rounded-pill" type="text" placeholder="Username" aria-label="default input example">
+                <div class="h6 text-start mt-3">Password</div>
+                <input class="form-control rounded-pill mb-1" type="password" placeholder="Password" aria-label="default input example">
+                <a href="#" class="text-muted text-decoration-none fs-6 float-end">forgot password ?</a>
+                <button type="button" class="btn btn-dark rounded-pill w-100 py-2 mt-3">LOGIN</button>
+                <a href="/signup" class="text-muted text-center d-block mt-3 text-decoration-none fs-6">create account</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

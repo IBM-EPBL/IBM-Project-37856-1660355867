@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<!--Navbar-->
+{% include 'nav.html' %}
+<!--Home-->
+<section class="bg-light min-vh-100 d-flex">
+    <div class="container my-auto">
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+            <div class="container text-center text-lg-start">
+                <div class="display-4 fw-bold">Lorem ipsum dolor sit amet.</div>
+                <div class="fs-5 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, optio.</div>
+                <a href="/signup" class="btn btn-dark rounded-pill py-2 px-5 mt-4">Get Started</a>
+            </div>
+            <div class="container d-lg-block d-none">
+                <img src="../static/img/Home1.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </div>    
+</section>
+<!--Features-->
+<section class="min-vh-100 py-5">
+    <div class="container mt-5">
+        <div class="text-center display-3 fw-bold">Features</div>
+        <div class="container">
+            <!--1-->
+            <div class="d-flex align-items-center my-5 my-lg-0">
+                <div class=""><img src="../static/img/Shopping cart_Two Color.png" alt="" class="img-fluid"></div>
+                <div class="">
+                    <div class="h3 fw-bold">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="fs-5 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ut quia et molestias?</div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="d-flex align-items-center my-5 my-lg-0">
+                <div class="">
+                    <div class="h3 fw-bold">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="fs-5 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ut quia et molestias?</div>
+                </div>
+                <div class=""><img src="../static/img/Wallet_Two Color.png" alt="" class="img-fluid"></div>
+            </div>
+            <!--3-->
+            <div class="d-flex align-items-center my-5 my-lg-0">
+                <div class=""><img src="../static/img/Shopping cart_Two Color.png" alt="" class="img-fluid"></div>
+                <div class="">
+                    <div class="h3 fw-bold">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="fs-5 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ut quia et molestias?</div>
+                </div>
+            </div>
+            <!--4-->
+            <div class="d-flex align-items-center my-5 my-lg-0">
+                <div class="">
+                    <div class="h3 fw-bold">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="fs-5 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ut quia et molestias?</div>
+                </div>
+                <div class=""><img src="../static/img/Wallet_Two Color.png" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

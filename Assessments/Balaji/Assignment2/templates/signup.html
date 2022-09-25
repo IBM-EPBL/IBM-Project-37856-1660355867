@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Sign Up{% endblock %}
+
+{% block head %}
+<style>
+    @media screen and (min-width: 992px) {
+        .box{
+            max-width: 35rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<section class="min-vh-100">
+    <div class="d-flex min-vh-100 w-100 flex-row">
+        <div class="bg-light flex-grow-1 position-relative box">
+            <div class="container p-5 position-absolute top-50 start-50 translate-middle">
+                <div class="d-flex flex-column">
+                    <div class="text-center h3">Sign Up</div>
+                    <div class="h6 text-start">Name</div>
+                    <input class="form-control rounded-pill" type="text" placeholder="Name">
+                    <div class="h6 text-start mt-3">Email</div>
+                    <input class="form-control rounded-pill" type="text" placeholder="Email">
+                    <div class="h6 text-start mt-3">Password</div>
+                    <input class="form-control rounded-pill mb-1" type="password" placeholder="Password">
+                    <div class="mt-2">
+                        <input class="form-check-input bg-dark" type="checkbox" value="Terms" checked>
+                        <a href="#" class="text-dark">Terms & Policies</a>
+                    </div>
+                    <button type="button" class="btn btn-dark rounded-pill w-100 py-3 mt-3">Create an Account</button>
+                    <div class="text-muted text-center mt-3">
+                        Already have an account? 
+                        <a href="/login" class="text-dark text-decoration-none fs-6">Log In</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow-1 bg-dark d-lg-flex d-none position-relative p-5">
+            <img src="../static/img/Finance app_Flatline (1).png" alt="" class="img-fluid position-absolute top-50 start-50 translate-middle bg-light p-2 rounded-circle">
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
